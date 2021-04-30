@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    NIM : 10118044
+    Nama : Wildan Muhammad Fikri
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightblue"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="250dp"
+    tools:context=".AlmostThereActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txt3_title"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+        <TextView
+            android:id="@+id/decripte"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_title"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="@string/txt3_description"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/decripte"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/login_style"
+            android:text="VERIFY"
+            android:onClick="GoToVerify"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>

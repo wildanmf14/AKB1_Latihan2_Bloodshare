@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    NIM : 10118044
+    Nama : Wildan Muhammad Fikri
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp"
+            >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/blood" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:hint="Username"
+                android:inputType="text"
+                android:outlineAmbientShadowColor="@color/separator"
+                android:outlineSpotShadowColor="@color/white"
+                android:paddingBottom="30dp"
+                android:shadowColor="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:importantForAutofill="no"></EditText>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:backgroundTint="@color/white"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:outlineAmbientShadowColor="@color/separator"
+                android:outlineSpotShadowColor="@color/white"
+                android:paddingBottom="30dp"
+
+                android:shadowColor="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/password"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/login_style"
+                android:text="@string/btn1_login"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="OR"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_fb"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/or"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/login_style"
+                android:drawableLeft="@drawable/fb_drawable"
+                android:drawablePadding="-30dp"
+                android:paddingRight="-20dp"
+                android:text="CONNECT WITH FACEBOOK"
+                android:textColor="@color/white">
+                /></Button>
+
+
+            <TextView
+                android:id="@+id/have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_fb"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:text="doesn't have account ? "
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_fb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/have"
+                android:onClick="GoToRegister"
+                android:clickable="true"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

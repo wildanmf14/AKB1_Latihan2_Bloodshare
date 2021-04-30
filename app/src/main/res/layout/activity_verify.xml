@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    NIM : 10118044
+    Nama : Wildan Muhammad Fikri
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightblue"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="200dp"
+    tools:context=".VerifyActivity">
+
+    //26/04/2021, membuat tampilan verify account, 10118043, Dian Rosa Pratama, IF01
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_title"
+            android:text="Verify your Account"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textAlignment="center"></TextView>
+        <TextView
+            android:id="@+id/decripte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_title"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="We have send verification code to your email"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            />
+        <EditText
+            android:id="@+id/verify"
+            android:layout_below="@id/decripte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="enter verification code here..."
+            android:textAlignment="center"
+            android:paddingBottom="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"/>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verify"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_style"
+            android:text="send"
+            android:onClick="GoToHome"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_send"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:text="doesn't get the code ? "
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_send"
+            android:layout_toRightOf="@+id/have"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Resend"
+
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</RelativeLayout>
